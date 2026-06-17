@@ -15,14 +15,11 @@ public class Main {
                 new AruncareaGunoiuluiPeJos("1231231231234", 4),
                 new AruncareaGunoiuluiPeJos("0987654321123", 1),
                 new DistrugereaBunurilorPark("1231231231234", 200),
-                new DistrugereaBunurilorPark("1234567890123", 1000),
-                new ParcareaIlegalaMasinii("1031274456709"),
-                new AruncareaGunoiuluiPeJos("1031274456709", 1),
-                new DistrugereaBunurilorPark("1031274456709", 258)
-
-
+                new DistrugereaBunurilorPark("1234567890123", 1000)
         )));
-
+        amenziManager.adaugaAmenda(new ParcareaIlegalaMasinii("1031274456709"));
+        amenziManager.adaugaAmenda(new AruncareaGunoiuluiPeJos("1031274456709", 1));
+        amenziManager.adaugaAmenda(new DistrugereaBunurilorPark("1031274456709", 258));
         // Am pus in comentarii ca consola sa nu fie prea aglomerata
         amenziManager.showAllAmenzi();
 //        amenziManager.showListaAmenzilor(amenziManager.amenziByCNP("1234567890123"));
