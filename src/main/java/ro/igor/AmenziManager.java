@@ -65,4 +65,9 @@ public class AmenziManager {
         }
         return res;
     }
+    public String amenziPentruCpn(String cnp){
+        return "Cetatean cu CNP: "+cnp+"\n" +
+                "Trebuie sa achite: " + this.calculateAmenzi(this.amenziByCNP(cnp)) + " RON\n" +
+                "Pentru:\n" + this.listaAmenzilorToString(this.amenziByCNP(cnp)) + "\n";
+    }
 }

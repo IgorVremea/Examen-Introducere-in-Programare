@@ -20,12 +20,11 @@ public class Main {
         amenziManager.adaugaAmenda(new ParcareaIlegalaMasinii("1031274456709"));
         amenziManager.adaugaAmenda(new AruncareaGunoiuluiPeJos("1031274456709", 1));
         amenziManager.adaugaAmenda(new DistrugereaBunurilorPark("1031274456709", 258));
+
         // Am pus in comentarii ca consola sa nu fie prea aglomerata
-        amenziManager.showAllAmenzi();
+//        amenziManager.showAllAmenzi();
 //        amenziManager.showListaAmenzilor(amenziManager.amenziByCNP("1234567890123"));
 //        amenziManager.showListaAmenzilor(amenziManager.amenziByType("ParcareaIlegalaMasinii"));
-        System.out.println("Cetatean cu CNP: 1031274456709\n" +
-                "Trebuie sa achite: " + amenziManager.calculateAmenzi(amenziManager.amenziByCNP("1031274456709")) + " RON\n" +
-                "Pentru:\n" + amenziManager.listaAmenzilorToString(amenziManager.amenziByCNP("1031274456709")) + "\n");
+        System.out.println(amenziManager.amenziPentruCpn("1031274456709"));
     }
 }
